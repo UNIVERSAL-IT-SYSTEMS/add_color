@@ -56,10 +56,11 @@ if ($ARGV[0] eq "-h" || $ARGV[0] eq "--help") {
    $modifications{cyan} = [".*"];
    $modifications{green} = [":"];
 
-   my $help_msg = " ----- add_color:\n\n"
+   my $help_msg = "Usage: perl add_color.pl [option] [filename]\n\n"
+      . " ----- add_color:\n\n"
       . " takes a stream or a filename as input and outputs with ansi color\n"
       . " codes added to individual lines of text.\n\n"
-      . " use:\n\n"
+      . " example use:\n\n"
       . "    \$ ./add_color.pl /text/file/with/custom_tags.txt\n"
       . "    \$ ping localhost | ./add_color.pl\n"
       . "    \$ perl add_color.pl readme.txt\n\n"

@@ -1,9 +1,11 @@
+Usage: perl add_color.pl [option] [filename]
+
  ----- add_color:
 
  takes a stream or a filename as input and outputs with ansi color
  codes added to individual lines of text.
 
- use:
+ example use:
 
     $ ./add_color.pl /text/file/with/custom_tags.txt
     $ ping localhost | ./add_color.pl
